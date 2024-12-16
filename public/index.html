@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wi-Fi Service Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="wifi1.jpg" alt="Wi-Fi Logo">
+        <h1>Star-Link Wi-Fi Service</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Fast, Reliable, and Affordable Internet</h2>
+      <p>Stay connected with our flexible data plans tailored just for you!</p>
+      <a href="#plans" class="cta-button">Explore Data Plans</a>
+    </div>
+  </section>
+
+  <section id="plans" class="plans-section">
+    <div class="container">
+      <h2>Choose Your Plan</h2>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <h3>Basic Plan</h3>
+          <p class="price">ksh.2 / 1 Hour</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(200, 'Basic Plan')">Subscribe</a>
+        </div>
+        <div class="plan-card">
+          <h3>Standard Plan</h3>
+          <p class="price">ksh.5 / 3 Hours</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(500, 'Standard Plan')">Subscribe</a>
+        </div>
+        <div class="plan-card">
+          <h3>Premium Plan</h3>
+          <p class="price">ksh.10 / 12 Hours</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(1000, 'Premium Plan')">Subscribe</a>
+        </div>
+        <div class="plan-card">
+          <h3>Family Plan</h3>
+          <p class="price">ksh.20 / 24 Hours</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(2000, 'Family Plan')">Subscribe</a>
+        </div>
+        <div class="plan-card">
+          <h3>Business Plan</h3>
+          <p class="price">ksh.130 / 1 week</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(13000, 'Business Plan')">Subscribe</a>
+        </div>
+        <div class="plan-card">
+          <h3>Unlimited Plan</h3>
+          <p class="price">ksh.500 / 1 month</p>
+          <a href="javascript:void(0)" class="subscribe-button" onclick="selectPlan(50000, 'Unlimited Plan')">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="subscription" class="subscription-section" style="display:none;">
+    <div class="container">
+      <h2>Subscribe to a Plan</h2>
+      <form id="subscription-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <input type="hidden" id="selected-plan" value="">
+        <button type="submit" class="subscribe-button">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Wi-Fi Service | All Rights Reserved</p>
+  </footer>
+
+  <!-- Paystack Payment Integration -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="inline.js"></script>
+</body>
+</html>

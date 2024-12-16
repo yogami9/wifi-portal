@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2d2a2a;
+  color: #f0f0f0; /* Increased contrast for readability */
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100%; /* Responsive image */
+  max-width: 50px;
+  margin-right: 15px;
+}
+
+header .logo h1 {
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background: url('wifi-hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0e9e9;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #00bfff;
+}
+
+.cta-button:hover {
+  background-color: #457585;
+  box-shadow: 0 0 20px #00bfff, #00bfff;
+}
+
+.cta-button:focus {
+  outline: 3px solid #00bfff; /* Accessibility improvement for keyboard navigation */
+}
+
+/* Plans Section */
+.plans-section {
+  background-color: #3a3838;
+  padding: 60px 0;
+}
+
+.plans-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #f9f9f9;
+}
+
+.plans-grid {
+  display: grid; /* Changed to grid layout for more flexibility */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 30px;
+}
+
+.plan-card {
+  background-color: #393030;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.plan-card .price {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2193da;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan-card ul li {
+  margin-bottom: 10px;
+}
+
+.subscribe-button {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #00bfff;
+}
+
+.subscribe-button:hover {
+  background-color: #457585;
+  box-shadow: 0 0 20px #00bfff, #00bfff;
+}
+
+.subscribe-button:focus {
+  
+  outline: 3px solid #00bfff; /* Accessibility improvement for keyboard navigation */
+  
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
+
+/* Add to your existing CSS */
+
+/* Subscription Section */
+.subscription-section {
+  background-color: #3a3838; /* Matching the general color theme */
+  padding: 60px 0;
+}
+
+.subscription-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #f9f9f9;
+}
+
+#subscription-form {
+  max-width: 400px; /* Constrain the form width for better UX */
+  margin: 0 auto; /* Center the form horizontally */
+  background-color: #393030;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f0f0f0; /* Increased contrast for readability */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555; /* Subtle border color for input */
+  border-radius: 5px;
+  background-color: #2d2a2a; /* Match the background color */
+  color: #fff; /* Ensure text is readable */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+  border-color: #00bfff; /* Outline color on focus */
+  outline: none;
+}
+
+#subscription-form .subscribe-button {
+  width: 100%; /* Full width submit button */
+}
+
+/* Responsive Design for Subscription Section */
+@media (max-width: 768px) {
+  #subscription-form {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .subscription-section h2 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+}
