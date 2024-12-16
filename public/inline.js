@@ -10,9 +10,13 @@ function fetchPaystackKey() {
     });
 }
 
+function selectPlans(){
+  document.getElementById('plans').style.display = 'block';
+}
 function selectPlan(amount, planName) {
   selectedAmount = amount;
   selectedPlanName = planName;
+  document.getElementById('plans').style.display = 'block';
   document.getElementById('selected-plan').value = planName;
   document.getElementById('subscription').style.display = 'block'; // Show the subscription form
 }
